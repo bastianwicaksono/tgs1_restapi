@@ -24,6 +24,9 @@ class Customers extends REST_Controller{
 				"code"=>200,
 				"message"=>"Response successfully",
 				"data"=>$data];
+		
+		header('Access-Control-Allow-Origin: *'); 
+		header('Access-Control-Allow-Methods: GET');
 		$this->response($result, 200);
 	}
 }
